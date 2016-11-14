@@ -26,4 +26,8 @@ La seule optimisation mise en place pour le moment est que l'expression SAT gén
 Compilation & execution
 -----------------------
 
-Le code se compile à l'aide de CMake
+Le code se compile à l'aide de CMake et est généré dans le répertoire `bin`.
+
+Le dossier src/core/ contient le code de transformation d'un graphe vers SAT.
+
+Le dossier src/graph/ contient le code relatif aux différents graphes.
