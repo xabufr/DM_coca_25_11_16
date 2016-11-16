@@ -7,7 +7,7 @@ Réduction graphe `k-coloriable` vers SAT
 La réduction se déroule en deux étapes, car le problème de `k-coloriabilité` peut se réduire à ces deux règles:
 
 1.  Chaque nœud doit pouvoir avoir au moins une couleur possible
-2.  Deux nœud adjacents ne doivent pas avoir la même couleur.
+2.  Deux nœuds adjacents ne doivent pas avoir la même couleur.
 
 Pour réaliser cette réduction nous allons avoir besoin de `k` variables par nœuds. Soit la variable `Cik` associée au nœud i, où k est une couleur. Si `Cik` est vraie, alors le nœud i est coloriable par k.
 
@@ -21,7 +21,10 @@ Si on trouve une solution à toutes ces clauses en même temps, alors le graphe 
 Optimisations
 -------------
 
-La seule optimisation mise en place pour le moment est que l'expression SAT générée ne contient aucune répétition dans la génération de l'étape 2.
+Les seules optimisations mises en place pour le moment sont:
+
+- L'expression SAT générée ne contient aucune répétition dans la génération de l'étape 2.
+- L'arrêt prématuré de l'étape 2 lorsque toutes les arêtes ont été trouvées.
 
 Compilation & execution
 -----------------------
