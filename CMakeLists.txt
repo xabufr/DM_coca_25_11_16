@@ -6,3 +6,4 @@ project (DM_CoCa)
 
 add_subdirectory (src/core)
 add_subdirectory (src/graphs)
+add_subdirectory (src/print)
