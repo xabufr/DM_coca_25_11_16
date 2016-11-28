@@ -67,6 +67,9 @@ void printSolution(char* line, int nbColors)
             }
         }
     }
+    for (int i = 0; i < orderG(); ++i) {
+        free(couleursSommets[i]);
+    }
     free(couleursSommets);
 }
 
