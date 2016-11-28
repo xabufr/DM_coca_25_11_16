@@ -22,7 +22,7 @@ int main(int argc, char** argv)
         return 2;
     }
 
-    size_t bufferLenght = 1024;
+    size_t bufferLenght = 1024 * 512;
     int lineLength;
     char* buffer = (char*)malloc(sizeof(char) * bufferLenght);
 
